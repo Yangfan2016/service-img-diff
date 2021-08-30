@@ -1,0 +1,17 @@
+syntax="proto3";
+
+package Diff;
+
+service DiffImg{
+    rpc getDiff(DiffRequest) returns (DiffResponse){}
+}
+
+message DiffRequest{
+    string first=1;
+    string second=2;
+}
+
+message DiffResponse{
+    string res=1;
+    float ssim=2;
+}
