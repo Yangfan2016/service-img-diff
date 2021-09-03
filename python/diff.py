@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from skimage.metrics import structural_similarity as compare_ssim
-import argparse
+# from skimage.metrics import structural_similarity as compare_ssim
 import imutils
 import cv2
 import numpy as np
